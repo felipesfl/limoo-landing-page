@@ -1,0 +1,35 @@
+{
+  "name": "limoo-landing-page",
+  "version": "1.0.0",
+  "description": "Landing Page de uma marca de refrigerante  Limoo construida com Bootstrap e Talwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipesfl/limoo-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/felipesfl/limoo-landing-page/issues"
+  },
+  "homepage": "https://github.com/felipesfl/limoo-landing-page#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "bootstrap": "^5.3.8",
+    "icons": "^1.0.0",
+    "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {
+    "vite": "^8.1.4"
+  },
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
+}
