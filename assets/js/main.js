@@ -92,3 +92,68 @@ window.addEventListener("resize", updateCarousel);
 
 // Inicializa
 updateCarousel();
+
+
+
+const carousel = document.getElementById("carousel");
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+
+const gap = 56; // gap-14 = 56px
+
+function getWidth() {
+
+    const product = document.querySelector(".product");
+
+    return product.offsetWidth + gap;
+
+}
+
+function moveNext() {
+
+    const width = getWidth();
+
+    carousel.style.transition = "transform .5s ease";
+
+    carousel.style.transform = `translateX(-${width}px)`;
+
+    carousel.addEventListener("transitionend", function handler() {
+
+        carousel.appendChild(carousel.firstElementChild);
+
+        carousel.style.transition = "none";
+
+        carousel.style.transform = "translateX(0)";
+
+        carousel.removeEventListener("transitionend", handler);
+
+    });
+
+}
+
+function movePrev() {
+
+    const width = getWidth();
+
+    carousel.style.transition = "none";
+
+    carousel.prepend(carousel.lastElementChild);
+
+    carousel.style.transform = `translateX(-${width}px)`;
+
+    requestAnimationFrame(() => {
+
+        carousel.style.transition = "transform .5s ease";
+
+        carousel.style.transform = "translateX(0)";
+
+    });
+
+}
+
+next.addEventListener("click", moveNext);
+
+prev.addEventListener("click", movePrev);
+
+// Auto Slide
+setInterval(moveNext, 4000);
