@@ -33,7 +33,7 @@
 
  <section class="flex items-center justify-center px-4 -mt-10 h-250">
 
-    <div id="hs-carousel" class="relative w-full max-w-6xl">
+    <div id="hs-carousel" class="relative w-full max-w-6xl -mt-25">
         <div class="overflow-hidden">
             <div id="slides" class="flex gap-10 transition-transform duration-500 ease-in-out">
                 <div class="flex h-140 w-300 shrink-0 items-center justify-between bg-[#00ff00] px-8 sm:px-10 lg:px-14">
@@ -85,42 +85,48 @@
     <div class="relative max-w-7xl mx-auto">
 
         <!-- Botão esquerdo -->
-        <button id="prev" class="absolute left-0 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full hover:bg-gray-100 transition">
+        <button id="prev" class="absolute left-0 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-gray-100 transition">
             <img src="assets/images/seta_esquerda.png" alt="Seta esquerda" class="w-8 h-8">
         </button>
 
         <!-- Área visível -->
         <div class="overflow-hidden">
-            <div id="carousel" class="flex justify-center gap-5 transition-transform duration-500 ease-in-out">
-                <div class="product shrink-0 bg-[#3cba60] w-100">
-                     <img src="assets/images/imagem_produto01.png"  class="w-500 mx-auto">
+            <div id="carousel" class="flex justify-center gap-3 transition-transform duration-500 ease-in-out">
+                <div class="product shrink-0 bg-[url('assets/images/background_limoo.png')] w-150 h-100">
+                     <img src="assets/images/imagem_produto01-03.png"  class="w-1000 ">
+                     <h1 class="text-lg font-bold text-center text-white">Lata Limoo 600 ml Sem Açucar</h1>
                 </div>
 
-                <div class="product shrink-0 bg-[#3cba60] w-90">
-                    <img src="assets/images/imagem_produto02.png"class="w-500 mx-auto">
+                <div class="product shrink-0 bg-gray-100 w-150 bg-[url('assets/images/background_limoo.png')]">
+                    <img src="assets/images/imagem_produto02-03.png"class="w-1000">
+                    <h1 class="text-lg font-bold text-center text-white  ">Lata Limoo 600 ml</h1>
                 </div>
 
-                <div class="product shrink-0 bg-[#3cba60] w-90">
-                    <img src="assets/images/imagem_produto03.png" class="w-500 mx-auto">
+                <div class="product shrink-0 bg-gray-100  w-150 bg-[url('assets/images/background_limoo.png')]">
+                    <img src="assets/images/imagem_produto03-03.png" class="w-1000">
+                    <h1 class="text-lg font-bold text-center text-white">Lata Limoo 350 ml</h1>
                 </div>
 
-                <div class="product shrink-0 bg-[#3cba60] w-90">
-                    <img src="assets/images/imagem_produto01.png" class="w-500 mx-auto">
+                <div class="product shrink-0 bg-gray-100 w-150 bg-[url('assets/images/background_limoo.png')]">
+                    <img src="assets/images/imagem_produto01-03.png" class="w-1000">
+                    <h1 class="text-lg font-bold text-center text-white">Lata Limoo 350 ml</h1>
                 </div>
 
-                <div class="product shrink-0 bg-[#3cba60] w-90">
-                    <img src="assets/images/imagem_produto02.png" class="w-500 mx-auto">
+                <div class="product shrink-0 bg-gray-100  w-150 bg-[url('assets/images/background_limoo.png')]">
+                    <img src="assets/images/imagem_produto02-03.png" class="w-1000 ">
+                    <h1 class="text-lg font-bold text-center text-white">Lata Limoo 350 ml</h1>
                 </div>
 
-                <div class="product shrink-0 bg-[#3cba60] w-90">
-                    <img src="assets/images/imagem_produto04.png" class="w-500 mx-auto">
+                <div class="product shrink-0 bg-gray-100  w-150 bg-[url('assets/images/background_limoo.png')]">
+                    <img src="assets/images/imagem_produto03-03.png" class="w-1000">
+                    <h1 class="text-lg font-bold text-center text-white">Lata Limoo 350 ml</h1>
                 </div>
             </div>
 
         </div>
 
         <!-- Botão direito -->
-        <button id="next" class="absolute right-0 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full hover:bg-gray-100 transition">
+        <button id="next" class="absolute right-0 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-gray-100">
            <img src="assets/images/seta_direita.png" alt="Seta direita" class="w-8 h-8">
         </button>
     </div>
