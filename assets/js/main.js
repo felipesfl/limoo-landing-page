@@ -157,3 +157,15 @@ prev.addEventListener("click", movePrev);
 
 // Auto Slide
 setInterval(moveNext, 4000);
+
+
+ document.addEventListener('DOMContentLoaded', function() {
+      const mapa = L.map('mapa').setView([-7.216942, -39.310572], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19
+      }).addTo(mapa);
+      L.marker([-7.216942, -39.310572]).addTo(mapa)
+        .bindPopup('Limoo - Juazeiro do Norte - CE<br>Estamos aqui!')
+        .openPopup();
+    });
