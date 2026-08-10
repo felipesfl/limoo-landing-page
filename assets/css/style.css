@@ -27,7 +27,14 @@
 }
 
 @media screen and (max-width: 1200px){
+     #nav-container{
+        display: none;
+     }
 
+     .mobile-menu-icon{
+        display: block;
+        margin-left: 90%;
+     }
 }
 
 @media screen and (max-width: 850px){
