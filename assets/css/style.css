@@ -86,7 +86,6 @@
      }
 }
 
-/* Carrossel de produtos: um produto por vez */
 #slides01 {
     width: 100%;
     max-width: 800px;
@@ -225,12 +224,69 @@
 }
 
 
-
 @media screen and (max-width: 550px){
+      .mobile-menu-icon{
+          margin-top: -8%;
+      }
 
+      .section-home{
+         height: 50rem;
+      }
+
+      #slides{
+        height: 33rem;
+      }
+
+      .nossos-produtos{
+         height: 40rem;
+      }
+
+      footer{
+        margin-top: -70%;
+      }
 }
 
 @media screen and (max-width: 450px){
+      .mobile-menu-icon{
+            margin-top: -10%;
+      }
 
+      .div-text{
+         margin-left: 2%;
+      }
+
+      .div-text h1{
+           font-size: 1.5rem;
+           text-align: center;
+      }
+
+      .div-text h2{
+          text-align: center;
+      }
+
+      .div-text p{
+         font-size: 0.9rem;
+         text-align: center;
+      }
+
+      .div-text button{
+          margin-left: 20%;
+      }
+
+      #slides{
+         height: 29.5rem;
+      }
+
+      #section-banner{
+        height: 15rem
+      }
+
+      #mapa{
+        width: 400px;
+      }
+
+      footer{
+        margin-top: -90%
+      }
 }
 
