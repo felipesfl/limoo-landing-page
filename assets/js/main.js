@@ -79,11 +79,14 @@ const carousel = document.getElementById("carousel");
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
-const gap = 56;
-
 function getWidth() {
     const product = document.querySelector(".product");
-    return product.offsetWidth + gap;
+    const computedStyle = window.getComputedStyle(product);
+    const marginRight = parseFloat(computedStyle.marginRight) || 0;
+    const marginLeft = parseFloat(computedStyle.marginLeft) || 0;
+    const gap = parseFloat(window.getComputedStyle(carousel).gap) || 0;
+
+    return product.offsetWidth + marginLeft + marginRight + gap;
 }
 
 function moveNext() {
