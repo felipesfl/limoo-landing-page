@@ -129,14 +129,30 @@ setInterval(moveNext, 4000);
         .openPopup();
     });
 
-function menuShow() {
-   let menuMobile = document.querySelector('.mobile-menu');
+function closeMobileMenu() {
+   const menuMobile = document.querySelector('.mobile-menu');
+   const menuButton = document.querySelector('.mobile-menu-icon button');
+   const menuIcon = document.querySelector('.mobile-menu-icon .icon');
 
-   if(menuMobile.classList.contains('open')){
-      menuMobile.classList.remove('open');
-      document.querySelector('.icon').src = "assets/images/icons8-cardápio-24.png";
-    } else {
-        menuMobile.classList.add('open');
-      document.querySelector('.icon').src = "assets/images/icons8-letra-x-24.png";
-    }
-   }
+   menuMobile.classList.remove('open');
+   menuIcon.src = "assets/images/icons8-cardápio-24.png";
+   menuButton.setAttribute('aria-expanded', 'false');
+   menuIcon.alt = 'Abrir menu';
+}
+
+function menuShow() {
+   const menuMobile = document.querySelector('.mobile-menu');
+   const menuButton = document.querySelector('.mobile-menu-icon button');
+   const menuIcon = document.querySelector('.mobile-menu-icon .icon');
+   const isOpen = menuMobile.classList.toggle('open');
+
+   menuIcon.src = isOpen ? "assets/images/icons8-letra-x-24.png" : "assets/images/icons8-cardápio-24.png";
+   menuButton.setAttribute('aria-expanded', isOpen);
+   menuIcon.alt = isOpen ? 'Fechar menu' : 'Abrir menu';
+}
+
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+mobileNavLinks.forEach((link) => {
+    link.addEventListener('click', closeMobileMenu);
+});
+

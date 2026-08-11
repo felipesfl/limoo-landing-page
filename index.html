@@ -13,6 +13,7 @@
     <title>Limoo</title>
 </head>
 <body class="font-Poppins">
+  <header class="relative z-9999">
     <nav class="bg-white">
       <div  class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 mt-3">
         <div class="flex items-center justify-between h-16">
@@ -28,25 +29,23 @@
             <a href="#" class="">Contatos</a>
           </div>
 
-          <button class="bg-black hover:bg-[#34d053] text-white font-bold py-2 px-4 rounded-[20px]">Seja um Distribuidor</button>
+          <button class="nav-button bg-black hover:bg-[#34d053] text-white font-bold py-2 px-4 rounded-[20px]">Seja um Distribuidor</button>
 
         </div>
       </div>
 
       <div class="mobile-menu-icon hidden">
-            <button onclick="menuShow()"><img class="icon" src="assets/images/icons8-cardápio-24.png" alt=""></button>
+            <button type="button" onclick="menuShow()" aria-expanded="false"><img class="icon" src="assets/images/icons8-cardápio-24.png" alt="Abrir menu"></button>
      </div>
 
-     <div class="mobile-menu hidden">
-         <div class="hidden lg:flex  lg:gap-20">
-            <a href="#" class="text-sm font-medium text-gray-900" aria-current="page">Home</a>
-            <a href="#" class="">Nossos Produtos</a>
-            <a href="#" class="">Distribuidores</a>
-            <a href="#" class="">Contatos</a>
-          </div>
-
-          
+     <div class="mobile-menu">
+            <a href="#" class="mobile-nav-link">Home</a>
+            <a href="#" class="mobile-nav-link">Nossos Produtos</a>
+            <a href="#" class="mobile-nav-link">Distribuidores</a>
+            <a href="#" class="mobile-nav-link">Contatos</a>
+     </div>
     </nav>
+  </header>
 
  <section class="flex items-center justify-center px-4 -mt-10 h-250">
 
