@@ -87,8 +87,50 @@
 }
 
 @media screen and (max-width: 850px){
-   
+    .mobile-menu-icon{
+        margin-top: -5%;
+    }
+    
+
+    #hs-carousel #slides > div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        gap: 0;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        height: 45rem;
+    }
+
+    .slide-image{
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-top: 5%;
+    }
+
+    .div-text{
+        margin-top: 5%;
+    }
+
+    .slide-image img{
+        display: block ;
+        width: 100% ;
+        height: auto;
+        object-fit: cover;
+        margin: 0 ;
+        padding: 0;
+    }
+
+    
+
 }
+
+
 
 @media screen and (max-width: 550px){
 
@@ -97,3 +139,4 @@
 @media screen and (max-width: 450px){
 
 }
+

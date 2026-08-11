@@ -38,7 +38,7 @@
             <button type="button" onclick="menuShow()" aria-expanded="false"><img class="icon" src="assets/images/icons8-cardápio-24.png" alt="Abrir menu"></button>
      </div>
 
-     <div class="mobile-menu">
+     <div class="mobile-menu hidden">
             <a href="#" class="mobile-nav-link">Home</a>
             <a href="#" class="mobile-nav-link">Nossos Produtos</a>
             <a href="#" class="mobile-nav-link">Distribuidores</a>
@@ -53,33 +53,45 @@
         <div class="overflow-hidden">
             <div id="slides" class="flex gap-10 transition-transform duration-500 ease-in-out">
                 <div class="flex h-140 w-300 shrink-0 items-center justify-between bg-[#00ff00] px-8 sm:px-10 lg:px-14">
-                    <div class="z-10 max-w-md">
+                    <div class=" div-text z-10 max-w-md">
                         <h2 class="mb-3 text-xs font-semibold uppercase tracking-[0.3rem] text-white">CONHEÇA OS NOSSOS PRODUTOS</h2>
                         <h1 class="text-4xl font-bold text-white">O sabor do verão chegou</h1>
                         <p class="mt-4 text-white">Refrescância que transforma qualquer momento em uma experiência inesquecível.</p>
                         <button class="mt-8 rounded-full bg-black px-6 py-3 text-white">Conheça os produtos</button>
                     </div>
-                    <img class="hidden sm:block w-56 lg:w-144 -mr-14" src="assets/images/imagem_slide01.png" alt="">
+                    <picture class="slide-image">
+                        <source media="(min-width:851px)" srcset="assets/images/imagem_slide01.png">
+                        <source media="(max-width:850px)" srcset="assets/images/imagem_slide850-01.png">
+                        <img src="assets/images/imagem_slide01.png" alt="" class="w-56 lg:w-144 mx-auto">
+                    </picture>
                 </div>
 
                  <div class="flex h-140 w-300 shrink-0 items-center justify-between bg-[#00ff00] px-8 sm:px-10 lg:px-14">
-                    <div class="z-10 max-w-md">
+                    <div class="div-text z-10 max-w-md">
                         <h2 class="mb-3 text-xs font-semibold uppercase tracking-[0.3rem] text-white">CONHEÇA OS NOSSOS PRODUTOS</h2>
                         <h1 class="text-4xl font-bold text-white">O sabor do verão chegou</h1>
                         <p class="mt-4 text-white">Refrescância que transforma qualquer momento em uma experiência inesquecível.</p>
                         <button class="mt-8 rounded-full bg-black px-6 py-3 text-white">Conheça os produtos</button>
                     </div>
-                    <img class="hidden sm:block w-56 lg:w-144 -mr-14" src="assets/images/imagem_slide02.png" alt="">
+                    <picture class="slide-image">
+                        <source media="(min-width:851px)" srcset="assets/images/imagem_slide02.png">
+                        <source media="(max-width:850px)" srcset="assets/images/imagem_slide850-02.png">
+                        <img src="assets/images/imagem_slide02.png" alt="" class="w-56 lg:w-144 mx-auto">
+                    </picture>
                 </div>
 
                  <div class="flex h-140 w-300 shrink-0 items-center justify-between bg-[#00ff00] px-8 sm:px-10 lg:px-14">
-                    <div class="z-10 max-w-md">
+                    <div class="div-text z-10 max-w-md">
                         <h2 class="mb-3 text-xs font-semibold uppercase tracking-[0.3rem] text-white">CONHEÇA OS NOSSOS PRODUTOS</h2>
                         <h1 class="text-4xl font-bold text-white">O sabor do verão chegou</h1>
                         <p class="mt-4 text-white">Refrescância que transforma qualquer momento em uma experiência inesquecível.</p>
                         <button class="mt-8 rounded-full bg-black px-6 py-3 text-white">Conheça os produtos</button>
                     </div>
-                    <img class="hidden sm:block w-56 lg:w-144 -mr-14" src="assets/images/imagem_slide03.png" alt="">
+                    <picture class="slide-image">
+                        <source media="(min-width:851px)" srcset="assets/images/imagem_slide03.png">
+                        <source media="(max-width:850px)" srcset="assets/images/imagem_slide850-03.png">
+                        <img src="assets/images/imagem_slide03.png" alt="" class="w-56 lg:w-144 mx-auto">
+                    </picture>
                 </div>
             </div>
         </div>
