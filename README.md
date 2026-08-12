@@ -2,7 +2,7 @@
 
 Landing Page desenvolvida para a **Limoo**, marca fictícia de refrigerante sabor limão. O projeto foi construído com foco em um design moderno, responsivo e alinhado à identidade visual vibrante da marca.
 
-<img src="preview.png" alt="Preview do Limoo" width="800>
+<img src="preview.png" alt="Preview do Limoo" width="800">
 
 ## Tecnologias Utilizadas
 
